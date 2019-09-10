@@ -1,0 +1,68 @@
+@import '../global-scss-components/ships',
+'../global-scss-components/colours',
+'../global-scss-components/fonts',
+'../global-scss-components/mixins';
+
+.initial-screen {
+    @include flexCenterColumn();
+
+    width: 100%;
+
+    background-image: url('./img/initial-screen.gif');
+    background-size: cover;
+}
+
+.title {
+    @include setMargin(45px 0 75px 0);
+    @include titleFont(50px);
+
+    width: 390px;
+}
+
+.chooseGameMode {
+    @include setMargin(80px 0 20px 0);
+
+    width: 100%;
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.play-against {
+    @include setMargin();
+}
+
+.mode-buttons {
+    @include setMargin(0 10%);
+    @include flexSpaceAround();
+}
+
+.button {
+    @include flexCenterColumn();
+    @include setSize(120px, 120px);
+
+    border: $white 3px solid;
+    border-radius: 30px;
+
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background: $blueDark;
+        color: $white;
+    }
+}
+
+.disabled {
+    background: $missed;
+
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+        background: $missed;
+        color: $mainText;
+
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAIA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,KAAK;GACf;;;AAGL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,KAAK;GACf;EAED,AAAA,MAAM,CAAC;IEdP,SAAS,EFec,IAAI;IEd3B,WAAW,EAAE,GAAG;IAEhB,cAAc,EAAE,SAAS;GFaxB;;;AAGL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,KAAK;GACf;EAED,AAAA,MAAM,CAAC;IGaP,MAAM,EHZiB,IAAI,CAAC,CAAC;IEzB7B,SAAS,EF0Bc,IAAI;IEzB3B,WAAW,EAAE,GAAG;IAEhB,cAAc,EAAE,SAAS;GFwBxB;EAED,AAAA,aAAa,CAAC;IGQd,MAAM,EHPiB,CAAC,CAAC,KAAK;GAC7B",
+    "sources": [
+        "screens.scss",
+        "../global-scss-components/_colours.scss",
+        "../global-scss-components/_fonts.scss",
+        "../global-scss-components/_mixins.scss"
+    ],
+    "names": [],
+    "file": "screens.css"
+}

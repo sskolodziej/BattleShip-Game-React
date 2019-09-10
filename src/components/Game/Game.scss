@@ -1,0 +1,23 @@
+@import '../global-scss-components/ships',
+'../global-scss-components/colours',
+'../global-scss-components/fonts',
+'../global-scss-components/mixins';
+
+body {
+    @include flexCenterColumn();
+    @include mainFont();
+    height: 95vh;
+    
+    color: $mainText;
+    font-family: "Roboto Mono", monospace;
+
+    user-select: none;
+}
+
+.gameboard {
+    width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}

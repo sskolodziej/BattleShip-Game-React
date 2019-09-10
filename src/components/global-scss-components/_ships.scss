@@ -1,0 +1,30 @@
+// Colour for ships
+
+// ship#        <--- active ship
+// ship#-sunk   <--- sunk ship
+// ship#-border <--- right-border of a ship
+
+$shipsColours: (
+    'ship1': #A4D7E1,
+    'ship1-sunk': #A4D7E180,
+    
+    'ship2': #FFBA92,
+    'ship2-sunk': #FFBA9280,
+    'ship2-border': 2px solid #F0884C,
+    
+    'ship3': #E0F5B9,
+    'ship3-sunk': #E0F5B980,
+    'ship3-border': 2px solid #A8DF42,
+
+    'ship4': #E7C5F8,
+    'ship4-sunk': #E7C5F880,    
+    'ship4-border': 2px solid #C790E3,
+);
+
+// Colour of field and its border
+$fieldColour: #FFFFFF;
+$fieldBorder: 1px solid #E5E6E7;
+$fieldBorderless: 1px solid transparent;
+
+// Missed field circle
+$missed: #AAAAAA;

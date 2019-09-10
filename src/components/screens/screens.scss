@@ -1,0 +1,34 @@
+@import '../global-scss-components/colours',
+'../global-scss-components/fonts',
+'../global-scss-components/mixins';
+
+@media screen and (min-width: 390px) {
+    .gameboard {
+        width: 390px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .gameboard {
+        width: 600px;
+    }
+
+    .title {
+        @include titleFont(60px);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .gameboard {
+        width: 800px;
+    }
+
+    .title {
+        @include setMargin(60px 0);
+        @include titleFont(70px);
+    }
+
+    .mode-buttons {
+        @include setMargin(0 170px);
+    }
+}

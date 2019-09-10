@@ -1,0 +1,67 @@
+@import '../global-scss-components/colours',
+'../global-scss-components/fonts',
+'../global-scss-components/mixins';
+
+.board {
+    display: flex;
+    margin-bottom: 20px;
+
+    // @include setSize(520px, 550px);
+    // @include flexCenterRow();
+    // background: rgb(177, 174, 174);
+    // flex-wrap: wrap;
+    // align-content: center;
+    align-items: flex-end;
+}
+
+.battlefield {
+    display: flex;
+    border: $frame;
+    width: $default-size*10;
+    flex-wrap: wrap;
+
+    .field {
+        transition: 0.4s;
+        cursor: pointer;
+    
+        &:hover {
+            background: $grey;
+            color: $white;
+        }
+    }
+}
+
+.nav-numbers {
+    @include flexColumn();
+    width: $default-size;
+}
+
+.alph-battlefield {
+    @include flexColumn();
+    align-items: flex-end;
+}
+
+.nav-alphabet {
+    display: flex;
+}
+
+.buttons {
+    padding-left: $default-size;
+
+    display: flex;
+    justify-content: space-around;
+
+    color: white;
+
+    .button {
+        @include setSize(150px, 50px);
+        @include biggerFont();
+
+        background: $grey;
+
+        //     &:hover {
+        //         //         background: $blueDark;
+        //         //         color: $white;
+        // 
+    }
+}

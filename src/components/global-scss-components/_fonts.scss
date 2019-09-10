@@ -1,0 +1,15 @@
+@mixin titleFont ($value: 70px) {
+    font-size: $value;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+@mixin mainFont {
+    font-size: 16px;
+}
+
+@mixin biggerFont {
+    font-size: 20px;
+    font-weight: 700;
+}

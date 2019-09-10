@@ -1,0 +1,32 @@
+@media screen and (min-width: 390px) {
+  .gameboard {
+    width: 390px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .gameboard {
+    width: 600px;
+  }
+  .title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gameboard {
+    width: 800px;
+  }
+  .title {
+    margin: 60px 0;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .mode-buttons {
+    margin: 0 170px;
+  }
+}
+/*# sourceMappingURL=screens.css.map */

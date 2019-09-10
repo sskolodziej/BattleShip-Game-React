@@ -1,0 +1,71 @@
+@import '../global-scss-components/ships',
+'../global-scss-components/colours',
+'../global-scss-components/fonts',
+'../global-scss-components/mixins';
+
+.screen-divide {
+    @include flexCenterRow();
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.information {
+    @include flexCenterColumn();
+    @include setSize(245px, 550px);
+
+    justify-content: space-around;
+}
+
+.instruction {
+    @include setMargin();
+}
+
+$border-width: 2px;
+
+@each $ship,
+$shipColour in $shipsColours {
+    .#{$ship} {
+        @include setSize($default-size, $default-size);
+        @include flexCenterColumn();
+
+        background: $shipColour;
+        border-right: $shipColour;
+
+        &-div {
+            @include flexCenterRow();
+            @include setMargin();
+            justify-content: flex-start;
+
+            & .field {
+                @include setSize($default-size - $border-width, $default-size - $border-width);
+                border: none;
+            }
+        }
+    }
+}
+
+.legend-ship {
+    @include setSize($default-size/2, $default-size/2);
+}
+
+.field {
+    @include setSize($default-size - $border-width, $default-size - $border-width);
+    @include flexCenter();
+
+    border: $fieldBorder;
+    background: $fieldColour;
+}
+
+.borderless {
+    border: $fieldBorderless;
+}
+
+.circle {
+    @include setSize(10px, 10px);
+
+    border-radius: 50%;
+    border: $missed 1px solid;
+
+    background: $missed;
+}
